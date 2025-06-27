@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --bg-light: #ffffff;
+  --bg-dark: #f8f9fa;
+  --font-color: #212529;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--font-color);
+  background-color: var(--bg-dark);
+}
+
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+}
+
+/* Remove template button styles — use Bootstrap buttons */
+button {
+  font-family: inherit;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Custom dialog modal */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow:  0 0.5rem 1.5rem rgba(0,0,0,0.2);
+}
+
+/* Image hover styles for product previews */
+.image-wrapper {
+  height: 12.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.img-hover-effect {
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover .img-hover-effect {
+  transform: scale(1.05);
+}
+
+.image-wrapper:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar fix for responsiveness */
+@media (max-width: 1199.98px) {
+  #navbarToggler.show .nav-link {
+    text-align: center;
+  }
+  #navbarToggler.collapsing .nav-link {
+    text-align: center;
+  }
+}
+
+.category-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}

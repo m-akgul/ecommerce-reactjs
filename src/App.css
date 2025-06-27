@@ -1,0 +1,11 @@
+#root {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #f8f9fa;
+}
