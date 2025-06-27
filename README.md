@@ -82,7 +82,7 @@ src/
 
    ```bash
    git clone https://github.com/m-akgul/ecommerce-reactjs.git
-   cd ecommerce-react
+   cd ecommerce-reactjs
    ```
 
 2. Install dependencies:
